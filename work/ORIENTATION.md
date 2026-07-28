@@ -65,19 +65,21 @@ public-safe write-up.**
 
 All eight official notebook skeletons for weeks 3+ have now been pulled from upstream (they
 arrive via GitHub commits, not a single download — `git fetch`/`git pull` before trusting this
-table, since Colab can push new ones without warning). Filenames don't line up 1:1 with card
-numbers — go by the card title in each notebook, not the `w0N` prefix.
+table, since Colab can push new ones without warning). Filenames were renamed to line up
+sequentially with card order (they originally arrived with duplicate/out-of-order `w0N` prefixes
+— e.g. two different files both named `w04_...`) — go by the card title either way, but the
+prefix is now consistent too.
 
 | Task | Notebook | Status |
 |---|---|---|
 | Pick a lane, frame the question (ML-02/03) | `w01_research_question.ipynb`, `w02_ml_task_framing.ipynb` | ✅ done |
 | Data contract (ML-04) | `w03_data_contract.ipynb` | ✅ done — run in Colab, real numbers on record: 321,546 content items in the March-2026 slice, honest AUC 0.611 (5 prev30 features), leaky AUC 1.000 with the trap column, restored to 0.611 |
-| Feature vector + leakage/privacy check (ML-05) | `w03_feature_leakage_check.ipynb` | 🔧 in progress — all 4 sections drafted (expanded feature vector with a live-discovered categorical from `dim_content`, feature notes, the 3-part leakage-hunt taxonomy, exclusion list); needs a Colab run to produce real numbers and confirm `dim_content`'s actual schema |
-| Signal audit — do the flags hold? (ML-06) | `w04_signal_audit.ipynb` | ⬜ blank skeleton, pulled from upstream — not started |
-| Baseline action score + top-20 review (ML-07) | `w04_baseline_score.ipynb` | ⬜ blank skeleton, pulled from upstream — not started |
-| Capstone modeling lane (ML-08) | `w05_model.ipynb` | ⬜ blank skeleton — not started |
-| Validation + research claim audit (ML-09) | `w06_validation_audit.ipynb` | ⬜ blank skeleton — not started |
-| Content action playbook (ML-10) | `w07_action_playbook.ipynb` | ⬜ blank skeleton — not started |
+| Feature vector + leakage/privacy check (ML-05) | `w04_feature_leakage_check.ipynb` | 🔧 in progress — all 4 sections drafted (expanded feature vector with a live-discovered categorical from `dim_content`, feature notes, the 3-part leakage-hunt taxonomy, exclusion list); needs a Colab run to produce real numbers and confirm `dim_content`'s actual schema |
+| Signal audit — do the flags hold? (ML-06) | `w05_signal_audit.ipynb` | ⬜ blank skeleton — not started |
+| Baseline action score + top-20 review (ML-07) | `w06_baseline_score.ipynb` | ⬜ blank skeleton — not started |
+| Capstone modeling lane (ML-08) | `w07_model.ipynb` | ⬜ blank skeleton — not started |
+| Validation + research claim audit (ML-09) | `w08_validation_audit.ipynb` | ⬜ blank skeleton — not started |
+| Content action playbook (ML-10) | `w09_action_playbook.ipynb` | ⬜ blank skeleton — not started |
 | Research paper + deploy (ML-11) | `capstone_report_template.md` + a deployed page, `submission/paper_url.txt` | ⬜ not started |
 
 So: two tasks fully done, one in progress with all sections drafted (awaiting a Colab run), six
