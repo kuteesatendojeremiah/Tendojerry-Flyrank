@@ -74,7 +74,7 @@ prefix is now consistent too.
 |---|---|---|
 | Pick a lane, frame the question (ML-02/03) | `w01_research_question.ipynb`, `w02_ml_task_framing.ipynb` | ✅ done |
 | Data contract (ML-04) | `w03_data_contract.ipynb` | ✅ done — run in Colab, real numbers on record: 321,546 content items in the March-2026 slice, honest AUC 0.611 (5 prev30 features), leaky AUC 1.000 with the trap column, restored to 0.611 |
-| Feature vector + leakage/privacy check (ML-05) | `w04_feature_leakage_check.ipynb` | 🔧 in progress — all 4 sections drafted (expanded feature vector with a live-discovered categorical from `dim_content`, feature notes, the 3-part leakage-hunt taxonomy, exclusion list); needs a Colab run to produce real numbers and confirm `dim_content`'s actual schema |
+| Feature vector + leakage/privacy check (ML-05) | `w04_feature_leakage_check.ipynb` | ✅ done — run in Colab, real numbers on record: 321,546 rows x 24 columns (5 numeric prev30 features + 4 categoricals found live on `dim_content`: `content_type`, `competition_level`, `main_intent`, `model_used`), base rate 0.285, honest AUC 0.664, leaky AUC 1.000, restored to 0.664 |
 | Signal audit — do the flags hold? (ML-06) | `w05_signal_audit.ipynb` | ⬜ blank skeleton — not started |
 | Baseline action score + top-20 review (ML-07) | `w06_baseline_score.ipynb` | ⬜ blank skeleton — not started |
 | Capstone modeling lane (ML-08) | `w07_model.ipynb` | ⬜ blank skeleton — not started |
@@ -82,8 +82,8 @@ prefix is now consistent too.
 | Content action playbook (ML-10) | `w09_action_playbook.ipynb` | ⬜ blank skeleton — not started |
 | Research paper + deploy (ML-11) | `capstone_report_template.md` + a deployed page, `submission/paper_url.txt` | ⬜ not started |
 
-So: two tasks fully done, one in progress with all sections drafted (awaiting a Colab run), six
-blank skeletons already sitting in the repo waiting their turn in card order.
+So: three tasks fully done and run, six blank skeletons already sitting in the repo waiting
+their turn in card order (ML-06 next).
 
 ## 6. Vocabulary worth holding onto
 
